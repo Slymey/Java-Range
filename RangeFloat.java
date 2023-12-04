@@ -13,6 +13,7 @@ public class RangeFloat implements Iterable<Double>, Iterator<Double>, Comparabl
     private Iterator itr=null;
     private double current=0;
     public RangeFloat(double min, int num, double step){
+        num--;
         this.min=min;
         this.num=num;
         this.step=step;

@@ -19,6 +19,7 @@ public class Range implements Iterable<Integer>, Iterator<Integer>, Comparable<I
         current=min;
     }
     public Range(int min, int num, int step){
+        num--;
         this.min=min;
         this.num=num;
         this.step=step;

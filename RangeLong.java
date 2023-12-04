@@ -19,6 +19,7 @@ public class RangeLong implements Iterable<Long>, Iterator<Long>, Comparable<Lon
         current=min;
     }
     public RangeLong(long min, long num, long step){
+        num--;
         this.min=min;
         this.num=num;
         this.step=step;
