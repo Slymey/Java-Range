@@ -94,3 +94,16 @@ Returns a random value between min and max with step size
 random(min, max, step)
 ```
 ## Examples
+### Integer Range
+for(int i:new Range(10, 20)){
+    //your code
+}
+
+for(int i:new Range(10, 20, 2)){
+    //your code
+}
+
+
+for(int i:new Range(10, (20-10)/2, 2)){
+    //your code
+}
