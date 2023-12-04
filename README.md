@@ -81,11 +81,11 @@ Return -1,0,1 if a value in bellow, within or above range
 ```
 r.compareTo(i) 
 ```
-Generates a random value from range with respect to step size
+Generates a random value from range
 ```
 r.random()
 ```
-Returns a random value between min and max with step size of 1
+Returns a random value between min and max
 ```
 random(min, max)
 ```
