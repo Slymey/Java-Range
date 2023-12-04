@@ -115,13 +115,26 @@ for(int i:new Range(4, (10-4)/2+1, 2)){
 ```
 ```java
 int n = Range.random(4,10);
-> 4, 5, 6, 7, 8, 9, 10  
+>  n = 4, 5, 6, 7, 8, 9, 10  
 ```
 ```java
 int n = Range.random(4,10,2);
-> 4, 6, 8, 10
+> n = 4, 6, 8, 10
 ```
-
+```java
+Range r = new Range(4,10);
+int n = r.random();
+> n = 4, 6, 8, 10
+```
+```java
+Range r = new Range(4,10);
+boolen t = r.equals(7);
+> t = true  
+boolen f = r.equals(15);
+> f = false
+boolen f = r.equals(-6);
+> f = false 
+```
 
 
 
