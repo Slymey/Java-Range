@@ -35,7 +35,7 @@ random(min, max, step)
 ```
 
 ### Long Range
-#####Is overall similar to Integer range exept it uses long type
+##### Is overall similar to Integer range exept it uses long type
 
 New range object with lower bound at min and upper bound at max
 ```
