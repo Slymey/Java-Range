@@ -146,7 +146,61 @@ b = r.compareTo(15);
 b = r.compareTo(-6);
 > b = -1 
 ```
+### Long Range
+##### Is the asme as Intager range, exept Range => RangeLong and int => long
 
+### Float Range
+```java
+for(double i:new RangeFloat(4, 10)){ 
+  //your code  
+}  
+> [4, 5, 6, 7, 8, 9, 10]
+```
+```java
+for(double i:new RangeFloat(4, 10, 2)){ 
+  //your code  
+}
+> [4, 6, 8, 10, 12, 14, 16, 18, 20, 22]
+```
+```java
+for(double i:new RangeFloat(4, (10-4)/2+1, 2)){ 
+  //your code  
+}
+> [4, 6, 8, 10]
+```
+```java
+double n = RangeFloat.random(4,10);
+>  n = 4, 5, 6, 7, 8, 9, 10  
+```
+```java
+double n = RangeFloat.random(4,10,2);
+> n = 4, 6, 8, 10
+```
+```java
+RangeFloat r = new RangeFloat(4,10);
+double n = r.random();
+> n = 4, 6, 8, 10
+```
+```java
+RangeFloat r = new RangeFloat(4,10);
+boolean b;
+b = r.equals(7.5);
+> b = true  
+b = r.equals(15.2);
+> b = false
+b = r.equals(-6);
+> b = false 
+```
+```java
+RangeFloat r = new RangeFloat(4,10);
+int b;
+b = r.compareTo(7.2);
+> b = 0  
+b = r.compareTo(15);
+> b = 1
+b = r.compareTo(-6.7);
+> b = -1 
+```
 
 
 
