@@ -98,27 +98,22 @@ random(min, max, step)
 ```java
 for(int i:new Range(5, 10)){ 
   //your code  
-}
-```
-```
-5,6,7,8,9,10
+}  
+> 5,6,7,8,9,10
 ```
 ```java
 for(int i:new Range(5, 10, 2)){ 
   //your code  
 }
-```
-```
-5,7,9,11,13,15,17,19,21,23
+> 5,7,9,11,13,15,17,19,21,23
 ```
 ```java
 for(int i:new Range(4, (10-4)/2+1, 2)){ 
   //your code  
 }
+> 4,6,8,10
 ```
-```
-4,6,8,10
-```
+
 
 
 
