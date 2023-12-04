@@ -68,7 +68,7 @@ public class Range implements Iterable<Integer>, Iterator<Integer>, Comparable<I
     }
     
     public int random(){
-        return (int)(Math.random()*(max-min+1)/step)+min;
+        return (int)(Math.random()*(max-min+1)/step)*step+min;
     }
     
     public static int random(int min, int max){
@@ -76,7 +76,7 @@ public class Range implements Iterable<Integer>, Iterator<Integer>, Comparable<I
     }
     
     public static int random(int min, int max, int step){
-        return (int)(Math.random()*(max-min+1)/step)+min;
+        return (int)(Math.random()*(max-min+1)/step)*step+min;
     }
 
 }

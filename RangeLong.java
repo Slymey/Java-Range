@@ -68,7 +68,7 @@ public class RangeLong implements Iterable<Long>, Iterator<Long>, Comparable<Lon
     }
     
     public long random(){
-        return (long)(Math.random()*(max-min+1)/step)+min;
+        return (long)(Math.random()*(max-min+1)/step)*step+min;
     }
     
     public static long random(long min, long max){
@@ -76,7 +76,7 @@ public class RangeLong implements Iterable<Long>, Iterator<Long>, Comparable<Lon
     }
     
     public static long random(long min, long max, long step){
-        return (long)(Math.random()*(max-min+1)/step)+min;
+        return (long)(Math.random()*(max-min+1)/step)*step+min;
     }
 
 }

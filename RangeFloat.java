@@ -57,15 +57,15 @@ public class RangeFloat implements Iterable<Double>, Iterator<Double>, Comparabl
     }
     
     public double random(){
-        return Math.random()*(max-min+1)/step+min;
-    }
-    
-    public static double random(int min, int max){
         return Math.random()*(max-min+1)+min;
     }
     
-    public static double random(int min, int max, int step){
-        return Math.random()*(max-min+1)/step+min;
+    public static double random(double min, int max){
+        return Math.random()*(max-min+1)+min;
+    }
+    
+    public static double random(double min, double max, double step){
+        return (int)(Math.random()*(max-min+1)/step)*step+min;
     }
 
 }
