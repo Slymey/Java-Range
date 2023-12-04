@@ -95,21 +95,17 @@ random(min, max, step)
 ```
 ## Examples
 ### Integer Range
-for(int i:new Range(5, 10)){ _5,6,7,8,9,10_
-
-    //your code
-    
+for(int i:new Range(5, 10)){ _5,6,7,8,9,10_  
+    //your code  
 }
 
-for(int i:new Range(5, 10, 2)){ _5,7,9,11,13,15,17,19,21,23_
-
-    //your code
-    
+for(int i:new Range(5, 10, 2)){ _5,7,9,11,13,15,17,19,21,23_  
+    //your code  
 }
 
 
-for(int i:new Range(4, (10-4)/2+1, 2)){ _4,6,8,10_\n
-    //your code\n
+for(int i:new Range(4, (10-4)/2+1, 2)){ _4,6,8,10_  
+    //your code  
 }
 
 
