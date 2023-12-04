@@ -128,11 +128,12 @@ int n = r.random();
 ```
 ```java
 Range r = new Range(4,10);
-boolen t = r.equals(7);
+boolean b;
+t = r.equals(7);
 > t = true  
-boolen f = r.equals(15);
+f = r.equals(15);
 > f = false
-boolen f = r.equals(-6);
+f = r.equals(-6);
 > f = false 
 ```
 
