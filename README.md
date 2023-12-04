@@ -129,14 +129,23 @@ int n = r.random();
 ```java
 Range r = new Range(4,10);
 boolean b;
-t = r.equals(7);
-> t = true  
-f = r.equals(15);
-> f = false
-f = r.equals(-6);
-> f = false 
+b = r.equals(7);
+> b = true  
+b = r.equals(15);
+> b = false
+b = r.equals(-6);
+> b = false 
 ```
-
+```java
+Range r = new Range(4,10);
+int b;
+b = r.compareTo(7);
+> b = 0  
+b = r.compareTo(15);
+> b = 1
+b = r.compareTo(-6);
+> b = -1 
+```
 
 
 
