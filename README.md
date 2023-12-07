@@ -17,7 +17,7 @@ New range object with lower bound at min, upper bound at max, for itteration, a 
 ```java
 new Range(int min, int max, int step, boolean num)
 ```
-Checks is a value is within range; returning boolean
+Checks if a value is within range; returning boolean
 ```java
 r.equals(i)
 ```
@@ -53,7 +53,7 @@ New range object with lower bound at min, upper bound at max, for itteration, a 
 ```java
 new Range(long min, long max, long step, boolean num)
 ```
-Checks is a value is within range; returning boolean
+Checks if a value is within range; returning boolean
 ```java
 r.equals(i)
 ```
@@ -85,7 +85,7 @@ New range object with lower bound at min, upper bound at max and for itteration,
 ```java
 new Range(double min, double max, double step)
 ```
-Checks is a value is within range; returning boolean
+Checks if a value is within range; returning boolean
 ```java
 r.equals(i)
 ```
