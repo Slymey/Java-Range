@@ -18,17 +18,31 @@ public class RangeLong implements Iterable<Long>, Iterator<Long>, Comparable<Lon
         this.max=max;
         current=min;
     }
-    public RangeLong(long min, long num, long step){
-        num--;
+    public RangeLong(long min, long max, long step){
+        step = Math.abs(step);
+        this.step = (min>max)?-step:step;
         this.min=min;
-        this.num=num;
-        this.step=step;
         current=min;
-        this.max=min+num*step;
-        if(num<1){
-            this.min=0;
-            this.max=0;
-            this.step=0;
+        this.max=max;
+    }
+    public RangeLong(long min, long max, long step, boolean num){
+        if(num){
+            max--;
+            this.min=min;
+            this.step=step;
+            current=min;
+            this.max=min+max*step;
+            if(max<1){
+                this.min=0;
+                this.max=0;
+                this.step=0;
+            }
+        }else{
+            step = Math.abs(step);
+            this.step = (min>max)?-step:step;
+            this.min=min;
+            current=min;
+            this.max=max;
         }
     }
 

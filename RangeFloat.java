@@ -12,6 +12,13 @@ public class RangeFloat implements Iterable<Double>, Iterator<Double>, Comparabl
     double step=0;
     private Iterator itr=null;
     private double current=0;
+    public RangeFloat(double min, double max, double step){
+        step = Math.abs(step);
+        this.step = (min>max)?-step:step;
+        this.min=min;
+        current=min;
+        this.max=max;
+    } 
     public RangeFloat(double min, int num, double step){
         num--;
         this.min=min;

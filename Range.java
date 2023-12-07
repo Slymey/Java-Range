@@ -8,7 +8,6 @@ import java.util.Iterator;
 public class Range implements Iterable<Integer>, Iterator<Integer>, Comparable<Integer>{
     int min=0;
     int max=0;
-    int num=0;
     private Iterator itr=null;
     private int current=0;
     private int step =1;
@@ -18,17 +17,31 @@ public class Range implements Iterable<Integer>, Iterator<Integer>, Comparable<I
         this.max=max;
         current=min;
     }
-    public Range(int min, int num, int step){
-        num--;
+    public Range(int min, int max, int step){
+        step = Math.abs(step);
+        this.step = (min>max)?-step:step;
         this.min=min;
-        this.num=num;
-        this.step=step;
         current=min;
-        this.max=min+num*step;
-        if(num<1){
-            this.min=0;
-            this.max=0;
-            this.step=0;
+        this.max=max;
+    }
+    public Range(int min, int max, int step, boolean num){
+        if(num){
+            max--;
+            this.min=min;
+            this.step=step;
+            current=min;
+            this.max=min+max*step;
+            if(max<1){
+                this.min=0;
+                this.max=0;
+                this.step=0;
+            }
+        }else{
+            step = Math.abs(step);
+            this.step = (min>max)?-step:step;
+            this.min=min;
+            current=min;
+            this.max=max;
         }
     }
 
