@@ -21,7 +21,7 @@ Checks if a value is within range; returning boolean
 ```java
 r.equals(i)
 ```
-Return -1,0,1 if a value in bellow, within or above range
+Return -1,0,1 if a value is bellow, within or above range
 ```java
 r.compareTo(i) 
 ```
@@ -39,7 +39,7 @@ random(int min, int max, int step)
 ```
 
 ### Long Range
-##### Is overall similar to Integer range exept it uses long type
+##### Is overall similar to Integer range except it uses long type
 
 New range object with lower bound at min and upper bound at max
 ```java
@@ -57,7 +57,7 @@ Checks if a value is within range; returning boolean
 ```java
 r.equals(i)
 ```
-Return -1,0,1 if a value in bellow, within or above range
+Return -1,0,1 if a value is bellow, within or above range
 ```java
 r.compareTo(i) 
 ```
@@ -89,7 +89,7 @@ Checks if a value is within range; returning boolean
 ```java
 r.equals(i)
 ```
-Return -1,0,1 if a value in bellow, within or above range
+Return -1,0,1 if a value is bellow, within or above range
 ```java
 r.compareTo(i) 
 ```
@@ -159,7 +159,7 @@ b = r.compareTo(-6);
 > b = -1 
 ```
 ### Long Range
-##### Is the same as Intager range, exept Range => RangeLong and int => long
+##### Is the same as Integer range, except Range => RangeLong and int => long
 
 ### Float Range
 ```java
