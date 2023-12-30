@@ -81,6 +81,10 @@ public class RangeLong implements Iterable<Long>, Iterator<Long>, Comparable<Lon
     public boolean equals(Long i) {
         return this.compareTo(i)==0;
     }
+
+    public boolean equals(long i) {
+        return this.compareTo(i)==0;
+    }
     
     public long random(){
         return (long)(Math.random()*(max-min+1)/step)*step+min;
