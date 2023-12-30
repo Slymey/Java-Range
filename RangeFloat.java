@@ -63,6 +63,10 @@ public class RangeFloat implements Iterable<Double>, Iterator<Double>, Comparabl
     public boolean equals(Double i) {
         return this.compareTo(i)==0;
     }
+
+    public boolean equals(double i) {
+        return this.compareTo(i)==0;
+    }
     
     public double random(){
         return Math.random()*(max-min+1)+min;
