@@ -80,6 +80,9 @@ public class Range implements Iterable<Integer>, Iterator<Integer>, Comparable<I
     public boolean equals(Integer i) {
         return this.compareTo(i)==0;
     }
+    public boolean equals(int i) {
+        return this.compareTo(i)==0;
+    }
     
     public int random(){
         return (int)(Math.random()*(max-min+1)/step)*step+min;
